@@ -25,6 +25,12 @@
 </div>
 
 <script type="text/javascript">
+  $(window).load(function(){
+    $(' .grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: 200
+    });
+  })
   $('.grid').mansory({
     itemSelector: '-grid-item',
     columnWidth: 200
